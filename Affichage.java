@@ -13,6 +13,7 @@ public class Affichage {
 		e1.ecrirePerson();
 		s1.ecrirePerson();
 
+		
 		}
 		catch(VilleException e){
 			
