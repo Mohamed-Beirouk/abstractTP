@@ -9,7 +9,6 @@ class Etudiant extends Person{
 			super(nom,prenom,route,ville);
 			this.diplome=diplome;
 			nbetudiants++;
-			super.nbetudiants++;
 		}
 
 		public String getDiplome() {

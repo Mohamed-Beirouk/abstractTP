@@ -10,7 +10,6 @@ public class Secretaire extends Person{
 			super(nom,prenom,route,ville);
 			this.numeroBureau=numeroBureau;
 			nbsecretaires++;
-			super.nbsecretaires++;
 
 		}
 

@@ -83,15 +83,13 @@ abstract public class Person  {
 
 	abstract public void ecrirePerson();
 	
-	public static int nbsecretaires;
-	public static int nbenseignants;
-	public static int nbetudiants;
+	
 	
 	public static void nbPersonnes() {
 		System.out.println(" le nombre de personnes : "+nbpersonnes);
-		System.out.println(" le nombre de etudiants : "+nbetudiants);
-		System.out.println(" le nombre de secrétaires : "+nbsecretaires);
-		System.out.println(" le nombre de enseignants : "+nbenseignants);
+		System.out.println(" le nombre de etudiants : "+Etudiant.nbetudiants);
+		System.out.println(" le nombre de secrétaires : "+Secretaire.nbsecretaires);
+		System.out.println(" le nombre de enseignants : "+Enseignant.nbenseignants);
 	}
 	
 	public void ModifierPerson(String rue, String ville) throws VilleException {

@@ -10,7 +10,6 @@ public String specialite;
 		super(nom,prenom,route,ville);
 		this.specialite=specialite;
 		nbenseignants++;
-		super.nbenseignants++;
 
 	}
 
