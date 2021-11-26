@@ -17,8 +17,8 @@ public class Affichage {
 		}
 		catch(VilleException e){
 			
-			System.out.println(" vous ne pouvez pas ajouter une ville non determiné");
-			
+			System.out.println(" vous ne pouvez pas ajouter une ville non determinï¿½");
+			System.out.println(" github test");
 		}
 		Person.nbPersonnes();
 		
