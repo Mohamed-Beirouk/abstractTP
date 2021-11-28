@@ -11,29 +11,14 @@ abstract public class Person  {
 	
 	public Person(String nom, String prenom, String route, String ville) throws VilleException {
 			
-		
-		String test = ville; 
-		ArrayList<String> villes = new ArrayList<String>();
-		villes.add("kiffa");
-		villes.add("atar");
-		villes.add("nema");
-		villes.add("aioun");
-		villes.add("kaedi");
-		villes.add("zouerate");
-		
-		if(villes.contains(test)) {
+
+		verifierVille(ville);
 			this.nom=nom;
 			this.prenom=prenom;
 			this.route=route;
 			this.ville=ville;
 			nbpersonnes++;
-			
-			
-		}
-		else {
-			throw new VilleException("la ville "+this.ville+" est pas dans la liste");
-		}
-		
+
 	}
 	
 	public String getNom() {
@@ -83,7 +68,24 @@ abstract public class Person  {
 
 	abstract public void ecrirePerson();
 	
-	
+	public void verifierVille(String ville) throws VilleException{
+		
+		String test = ville; 
+		ArrayList<String> villes = new ArrayList<String>();
+		villes.add("kiffa");
+		villes.add("atar");
+		villes.add("nema");
+		villes.add("aioun");
+		villes.add("kaedi");
+		villes.add("zouerate");
+		if (villes.contains(test) == false) {
+			throw new VilleException("la ville "+this.ville+" est pas dans la liste");
+		}
+		
+		
+		
+		
+	}
 	
 	public static void nbPersonnes() {
 		System.out.println(" le nombre de personnes : "+nbpersonnes);
@@ -93,26 +95,11 @@ abstract public class Person  {
 	}
 	
 	public void ModifierPerson(String rue, String ville) throws VilleException {
-		String test = ville; 
-		ArrayList<String> villes = new ArrayList<String>();
-		villes.add("kiffa");
-		villes.add("atar");
-		villes.add("nema");
-		villes.add("aioun");
-		villes.add("kaedi");
-		villes.add("zouerate");
-		
-		if(villes.contains(test)) {
-		
+
+		verifierVille(ville);
 			this.route=rue;
 			this.ville=ville;
 			
-			
-			
-		}
-		else {
-			throw new VilleException("la ville "+this.ville+" est pas dans la liste");
-		}
 	}
 	
 	
