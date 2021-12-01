@@ -10,6 +10,7 @@ class Etudiant extends Person{
 			this.diplome=diplome;
 			nbetudiants++;
 		}
+		
 
 		public String getDiplome() {
 			return diplome;
@@ -40,6 +41,9 @@ class Etudiant extends Person{
 	public String toString() {
 		return " le nom est : "+this.nom+" le prenom est : "+this.prenom+" la route est : "+this.route+ 
 				" la ville est : "+this.ville+ " le diplome en cours"+this.diplome;
+	}
+	public static int nombresetudiants() {
+		return nbetudiants;
 	}
 
 

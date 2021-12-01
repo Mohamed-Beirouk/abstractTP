@@ -4,7 +4,7 @@ public class Enseignant extends Person{
 	
 public String specialite;
 	
-	static int nbenseignants;
+	private static int nbenseignants;
 
 	public Enseignant(String nom, String prenom, String route, String ville, String specialite) throws VilleException {
 		super(nom,prenom,route,ville);
@@ -42,6 +42,9 @@ public String specialite;
 	public String toString() {
 		return " le nom est : "+this.nom+" le prenom est : "+this.prenom+" la route est : "+this.route+ 
 				" la ville est : "+this.ville+ " la specialite en cours"+this.specialite;
+	}
+	public static int nombrespersonnes() {
+		return nbenseignants;
 	}
 	
 	

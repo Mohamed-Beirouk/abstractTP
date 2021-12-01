@@ -12,7 +12,7 @@ public class Affichage {
 //		Secretaire s1 = new Secretaire("mohamed","beirouk","r7","kaedi","master");
 		e1.ecrirePerson();
 //		s1.ecrirePerson();
-		e1.ModifierPerson("r7", "kiffa");
+		e1.ModifierPerson("r7", "autre ville");
 		e1.ecrirePerson();
 
 		
@@ -21,8 +21,7 @@ public class Affichage {
 			
 			System.out.println(" vous ne pouvez pas ajouter une ville non determiner");
 		}
-//		Person.nbPersonnes();
-		System.out.println(" github test");
+		System.out.println(" \n \n github push test");
 
 		
 	}

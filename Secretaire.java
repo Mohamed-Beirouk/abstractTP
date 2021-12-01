@@ -12,6 +12,7 @@ public class Secretaire extends Person{
 			nbsecretaires++;
 
 		}
+		
 
 		public String getNumeroBureau() {
 			return numeroBureau;
@@ -41,6 +42,9 @@ public class Secretaire extends Person{
 		public String toString() {
 			return " le nom est : "+this.nom+" le prenom est : "+this.prenom+" la route est : "+this.route+ 
 					" la ville est : "+this.ville+ " le numero Bureau en cours"+this.numeroBureau;
+		}
+		public static int nombresecretaires() {
+			return nbsecretaires;
 		}
 		
 		
