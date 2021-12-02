@@ -3,15 +3,14 @@ import java.util.ArrayList;
 
 abstract public class Person  {
 	
-	public String nom;
-	public String prenom;
-	public String route;
-	public String ville;
-	public static int nbpersonnes;
+	protected String nom;
+	protected String prenom;
+	protected String route;
+	protected String ville;
+	protected static int nbpersonnes;
 	
 	public Person(String nom, String prenom, String route, String ville) throws VilleException {
-			
-
+		
 		verifierVille(ville);
 			this.nom=nom;
 			this.prenom=prenom;

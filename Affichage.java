@@ -19,10 +19,9 @@ public class Affichage {
 		}
 		catch(VilleException e){
 			
-			System.out.println(" vous ne pouvez pas ajouter une ville non determiner");
+			System.out.println(" \n vous ne pouvez pas ajouter une ville non determiner");
 		}
-		System.out.println(" \n \n github push test");
-
+		System.out.println(" \n github push test");
 		
 	}
 }

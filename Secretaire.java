@@ -2,9 +2,9 @@ package EtablissementEnseignement;
 
 public class Secretaire extends Person{
 
-	public String numeroBureau;
+	private String numeroBureau;
 	
-	static int nbsecretaires;
+	private static int nbsecretaires;
 
 		public Secretaire(String nom, String prenom, String route, String ville, String numeroBureau) throws VilleException {
 			super(nom,prenom,route,ville);

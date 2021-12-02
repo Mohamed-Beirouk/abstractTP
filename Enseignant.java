@@ -2,7 +2,7 @@ package EtablissementEnseignement;
 
 public class Enseignant extends Person{
 	
-public String specialite;
+	private String specialite;
 	
 	private static int nbenseignants;
 

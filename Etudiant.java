@@ -1,9 +1,9 @@
 package EtablissementEnseignement;
 
 class Etudiant extends Person{
-	public String diplome;
+	private String diplome;
 	
-	static int nbetudiants;
+	private static int nbetudiants;
 
 		public Etudiant(String nom, String prenom, String route, String ville, String diplome) throws VilleException {
 			super(nom,prenom,route,ville);
